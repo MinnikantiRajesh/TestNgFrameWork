@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHrmTestNgSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UserRegistration(failed)">
+    <parameter name="empname" value="VidyaSagar"/>
+    <parameter name="password" value="Sagar123!@#"/>
+    <parameter name="confirmpassword" value="Sagar123!@#"/>
+    <parameter name="username" value="Sagar"/>
+    <classes>
+      <class name="com.OrangeHrmTest.UserRegistrationTest">
+        <methods>
+          <include name="UserRegistration"/>
+          <include name="LaunchApplication"/>
+          <include name="CloseApplication"/>
+        </methods>
+      </class> <!-- com.OrangeHrmTest.UserRegistrationTest -->
+    </classes>
+  </test> <!-- UserRegistration(failed) -->
+</suite> <!-- Failed suite [OrangeHrmTestNgSuite] -->

@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OrangeHrm">
+<test name="AdminLoginTestWithValidData">
+   <parameter name="username" value="Admin"></parameter>
+   <parameter name="password" value="Qedge123!@#"></parameter>
+     <classes>
+        <class name="com.OrangeHrmTest.AdminLoginTestWithValidData"></class>
+     </classes>  
+  </test>
+  
+  <test name="AdminLoginTestWithInvalidData">
+  <parameter name="username" value="Admins"></parameter>
+   <parameter name="password" value="Qedge123!@#123"></parameter>
+   <classes>
+     <class name="com.OrangeHrmTest.AdminLoginTestWithInvalidData"></class>
+   </classes>
+  </test>
+  
+  <test name="EmployeeResgistration">
+   <parameter name="fname" value="Junior"></parameter>
+   <parameter name="mname" value="Vidya"></parameter>
+   <parameter name="lname" value="Sagar"></parameter>
+    <classes>
+      <class name="com.OrangeHrmTest.EmployeeTest"></class>
+    </classes>
+  </test>
+  
+  <test name="UserRegistration">
+  <parameter name="userrole" value="ESS"></parameter>
+   <parameter name="empname" value="VidyaSagar="></parameter>
+   <parameter name="username" value="Sagar"></parameter>
+   <parameter name="password" value="Sagar123!@#"></parameter>
+   <parameter name="confirmpassword" value="Sagar123!@#"></parameter>
+    <classes>
+      <class name="com.OrangeHrmTest.UserRegistrationTest"></class>
+    </classes>
+  </test>
+  <test name="UserLoginTest">
+   <parameter name="username" value="Sagar"></parameter>
+   <parameter name="password" value="Sagar123!@#"></parameter>
+      <classes>
+         <class name="com.OrangeHrmTest.UserLoginTest"></class>
+      </classes>
+  </test>
+</suite>
